@@ -1,0 +1,51 @@
+
+
+###
+
+# main Router
+Get http://localhost:3000?port=1234&test=abcd
+
+
+###
+Get http://localhost:3000/api/goods
+
+
+###
+POST  http://localhost:3000/goods
+content-type: application/json
+
+{
+   "goodsId": 2,
+   "name": "시원한 콜라",
+   "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk7JqMw7ZYZP4ZW136wcoMTmLzbrMIJzUWb1Dhu9cHwCPp0gA&usqp=CAc",
+   "category": "drink",
+   "price": 3000
+}
+
+
+###
+# 장바구니 포스트 요청
+Get http://localhost:3000/api/carts
+
+
+### 
+# 가나다다 
+Post http://localhost:3000/api/goods/2/cart
+content-type: application/json
+
+{
+   "quantity": 20
+}
+
+### 
+# 가나다다 
+Put http://localhost:3000/api/goods/2/cart
+content-type: application/json
+
+{
+   "quantity": 200
+}
+### 
+# 가나다다 
+delete http://localhost:3000/api/goods/2/cart
+
