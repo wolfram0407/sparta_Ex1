@@ -11,7 +11,6 @@ mongoose.set("strictQuery", false);
 connect();
 
 app.get("/", (req, res) => {
-  console.log(req.query);
   res.send(req.query);
 });
 
